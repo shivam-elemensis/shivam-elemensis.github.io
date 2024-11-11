@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sharma - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a202c;
+            color: #edf2f7;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 1) 0%, rgba(37, 99, 235, 1) 100%);
+        }
+
+        .highlight-text {
+            color: #38bdf8;
+        }
+
+        .card {
+            background-color: #2d3748;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-icon {
+            color: #38bdf8;
+        }
+
+        .footer-bg {
+            background-color: #2d3748;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-bg py-20 text-center text-white">
+        <h1 class="text-4xl font-bold">Shivam Sharma</h1>
+        <p class="mt-2 text-xl">Backend-Focused Full Stack Developer | 3+ Years of Experience</p>
+    </header>
+
+    <nav class="bg-gray-800 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-semibold">Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-white hover:text-highlight-text">About</a></li>
+                <li><a href="#skills" class="text-white hover:text-highlight-text">Skills</a></li>
+                <li><a href="#projects" class="text-white hover:text-highlight-text">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="py-20" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-highlight-text">About Me</h2>
+            <p class="mt-4 text-lg">👋 Hello! I’m an experienced Web Developer with 3+ years of expertise in creating
+                scalable, efficient, and clean web solutions. Here’s a glimpse of what I offer:</p>
+            <ul class="mt-6 space-y-4 text-left max-w-3xl mx-auto text-lg">
+                <li><i class="fas fa-cogs text-highlight-text mr-3"></i> Backend Development (Primary Focus): Node.js,
+                    TypeScript</li>
+                <li><i class="fas fa-paint-brush text-highlight-text mr-3"></i> Frontend Development: Angular, React,
+                    AngularJS</li>
+                <li><i class="fas fa-check-circle text-highlight-text mr-3"></i> Testing: Jest (Ensuring quality with
+                    automated tests)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-900" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-highlight-text">Core Skills</h2>
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="card p-6">
+                    <i class="fas fa-cogs text-4xl skills-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">Backend Development</h3>
+                    <p class="mt-2">Node.js, TypeScript, MongoDB, MySQL, Laravel</p>
+                </div>
+                <div class="card p-6">
+                    <i class="fas fa-paint-brush text-4xl skills-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">Frontend Development</h3>
+                    <p class="mt-2">React, Angular, AngularJS</p>
+                </div>
+                <div class="card p-6">
+                    <i class="fas fa-check-circle text-4xl skills-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">Testing</h3>
+                    <p class="mt-2">Jest, Automated Tests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-highlight-text">Projects</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-highlight-text">Freelancing System</h3>
+                    <p class="mt-2">A platform for freelancers and employers to collaborate on projects. Features
+                        include a bidding system, smart recommendations, and user management.</p>
+                    <ul class="mt-4 list-disc text-left">
+                        <li>Multiple user roles (Freelancers, Employers, Admins)</li>
+                        <li>Dynamic project bidding and recommendations</li>
+                        <li>Secure and scalable architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bg py-4 text-center text-white">
+        <p>Let's Connect: <a href="mailto:shivam@example.com" class="text-highlight-text">shivam@example.com</a></p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
